@@ -1,0 +1,24 @@
+// generate ACL
+cake AclExtras.AclExtras aco_sync
+
+// bake models
+cake bake all
+
+Builder
+test@abodeinvest.com.au
+111111
+
+Supplier
+subdivision@abodedac.com.au
+111111
+
+Trades
+labour@abodeinvest.com.au
+111111
+
+admin
+admin@abodeinvest.com.au
+qwerty7
+
+regular
+dave.storm@abodeinvest.com.au

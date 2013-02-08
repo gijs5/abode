@@ -1,0 +1,22 @@
+<?php
+$this->Html->addCrumb($this->request->data['Projectstep']['Stage']['name']);
+$this->Html->addCrumb($this->request->data['Projectstep']['name']);
+$this->Html->addCrumb('Default Projectactions');
+$this->Html->addCrumb('Edit '.$this->request->data['Projectaction']['name']);
+?>
+<div class="projectactions form">
+<?php echo $this->Form->create('Projectaction'); ?>
+
+	<p><em>By default the contractor is defined by the selected council</em></p>
+	<fieldset>
+		<legend><?php echo __('Edit Projectaction'); ?></legend>
+	<?php
+		echo $this->Form->input('id');
+		echo $this->Form->input('name');
+		echo $this->Form->input('duration', array('type'=>'text'));
+		echo $this->Form->input('description');
+		echo $this->Form->input('contractortype_id');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
+</div>

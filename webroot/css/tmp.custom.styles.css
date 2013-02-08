@@ -1,0 +1,143 @@
+/* general layout */
+* {
+	outline:none;
+}
+#header a {
+	color:#fff;
+}
+#header h1 {
+	float:left;
+}
+#header #user_panel {
+	float:right;
+}
+#left {
+	float:left;
+	width:200px;
+}
+	#left .actions {
+		width:auto;
+	}
+#right {
+	float:left;
+	padding:0 20px 20px 20px;
+	border-left: 1px solid #666;
+	margin:20px;
+	width:800px;
+}
+div.form, div.index, div.view {
+	float:none;
+	width:auto;
+	border:none;
+	padding:0;
+	margin:0;
+}
+#breadcrumbs {
+	margin:0 0 20px 0;
+}
+ul.page-menu {
+	margin:20px 0;
+}
+#JQresult {
+	margin:20px 0;
+}
+
+form div {
+	clear:none;
+	padding:0;
+}
+
+div.coll-left {
+	float:left;
+	width:390px;
+}
+div.coll-right {
+	float:left;
+	width:390px;
+	padding:0 0 0 20px;
+}
+form {
+	margin:0;
+	padding:0;
+	width:auto;
+}
+fieldset {
+	padding:0;
+	margin:0;
+}
+	fieldset legend {
+		font-size:15px;
+		color:#777;
+		border-bottom:1px solid #777;
+		margin:0 0 10px 0;
+	}
+
+/* states */
+.mail_state_2 {
+	color:#f00;
+}
+.mail_state_1 {
+	color:#0f0;
+}
+.mail_state_0, .phase_state_0, .action_state_0 {
+	color:#FF7300;
+}
+li.list_phase_state_0, li.list_phase_state_0 * {
+	color:#bbb;
+}
+
+/* jquery ui sortable */
+.ui-state-highlight {
+	padding:2px;
+	border:1px solid #555;
+	background:#ccc;
+}
+.handle {
+	cursor:move;
+	text-indent:-999px;
+	width:21px;
+	height:21px;
+	overflow:hidden;
+	display:block;
+	float:left;
+	background:url('../img/drag.gif') top left no-repeat;
+}
+
+/* page: projectphases/defaults/:id */
+#projectphases {
+	
+}
+	#projectphases .projectphase-item {
+		float:left;
+		clear:both;
+		background:#fff;
+	}
+	#projectphases .ui-state-highlight {
+		float:left;
+		width:80%;
+	}
+#projectactions {
+	
+}
+ul.droptrue {
+	padding:5px;
+	border:1px solid #444;
+	list-style:none;
+	margin:0 0 10px 0;
+	min-height:30px;
+	width:300px;
+}
+	ul.droptrue li {
+		cursor:move;
+	}
+div#tabs.councils-list div.select {
+	display:table;
+}
+	div#tabs.councils-list div.select fieldset {
+		width:350px;
+		float:left;
+	}
+div#projectactionfiles div.item {
+	border-bottom:1px solid #ccc;
+	padding:20px 0;
+}
